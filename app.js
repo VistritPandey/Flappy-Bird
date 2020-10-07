@@ -28,3 +28,13 @@ document.addEventListener('DOMContentLoaded' , () => {
         console.log(birdBottom)
     }
     document.addEventListener('keyup', control)
+    function generateObstacle() {
+        let obstacleLeft = 500
+        let randomHeight = Math.random() * 60
+        let obstacleBottom = randomHeight
+        const obstacle = document.createElement('div')
+        const topObstacle = document.createElement('div')
+        if (!isGameOver) {
+            obstacle.classList.add('obstacle')
+            topObstacle.classList.add('topObstacle')
+        }
