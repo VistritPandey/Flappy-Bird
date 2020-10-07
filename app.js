@@ -16,12 +16,13 @@ document.addEventListener('DOMContentLoaded' , () => {
         bird.style.left = birdLeft + 'px'
     }
     let gameTimerId = setInterval(startGame, 20)
+    
     function jump() {
         if (birdBottom < 500) birdBottom += 50
         bird.style.bottom = birdBottom + 'px'
         console.log(birdBottom)
     }
-    document.addEventListener('keyup', jump)
+    document.addEventListener('keyup', jump)//problem
 
 
     function generateObstacle() {
