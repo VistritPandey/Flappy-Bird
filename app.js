@@ -14,3 +14,11 @@ document.addEventListener('DOMContentLoaded' , () => {
         birdBottom -= gravity
         bird.style.bottom = birdBottom + 'px'
         bird.style.left = birdLeft + 'px'
+    }
+    let gameTimerId = setInterval(startGame, 20)
+
+    function control(e) {
+        if (e.keyCode === 32) {
+            jump()
+        }
+    }
