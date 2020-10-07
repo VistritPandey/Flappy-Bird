@@ -68,3 +68,12 @@ document.addEventListener('DOMContentLoaded' , () => {
 
     }
     generateObstacle()
+    function gameOver() {
+        clearInterval(gameTimerId)
+        console.log('game over')
+        isGameOver = true
+        document.removeEventListener('keyup', control)
+        ground.classList.add('ground')
+        ground.classList.remove('ground-moving')
+    }
+})
