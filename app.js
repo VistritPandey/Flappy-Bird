@@ -38,3 +38,10 @@ document.addEventListener('DOMContentLoaded' , () => {
             obstacle.classList.add('obstacle')
             topObstacle.classList.add('topObstacle')
         }
+        gameDisplay.appendChild(obstacle)
+        gameDisplay.appendChild(topObstacle)
+        obstacle.style.left = obstacleLeft + 'px'
+        topObstacle.style.left = obstacleLeft + 'px'
+        obstacle.style.bottom = obstacleBottom + 'px'
+        topObstacle.style.bottom = obstacleBottom + gap + 'px'
+        
