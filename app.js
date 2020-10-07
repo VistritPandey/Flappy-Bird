@@ -22,3 +22,9 @@ document.addEventListener('DOMContentLoaded' , () => {
             jump()
         }
     }
+    function jump() {
+        if (birdBottom < 500) birdBottom += 50
+        bird.style.bottom = birdBottom + 'px'
+        console.log(birdBottom)
+    }
+    document.addEventListener('keyup', control)
